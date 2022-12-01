@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;;
+    overflow-x: hidden;
+}
+.container-background{
+    background-color: rgb(243, 252, 247);
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: rgb(243, 252, 247);;
+    
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-foodies{
+    font-size: 3rem;
+    font-weight:400;
+    padding: 8rem;
+    color: rgb(6, 193, 104);
+}
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 50%;
+    padding: 4rem;
+       
+}
+.nav-home,.about, .service, .our-company, .pages{
+    color: black;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.container-food{
+    display: grid;
+    margin-top:0rem;
+    height:calc(100vh-0rem);
+    grid-template-areas: 'serious-food serious-food woman-img'
+                          'serious-food serious-food woman-img';
+}
+.serious-food{
+    grid-area: serious-food;
+    padding: 3rem;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.serious-food h1{
+    font-size: 12rem;
+    font-weight: 500;
+    padding: 5rem;
+    line-height: 7rem;
+        
+
+}
+.get-started{
+    color: rgb(179, 229, 252);
+    background-color:rgb(6, 193, 104) ;
+    border: none;
+    min-height: 5rem;
+    width: 40%;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 6rem;
+    margin-left: 5rem;
+    background-image: url(/assets/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position:right;
+    
+}
+
+.serious-food p{
+    color: rgb(128, 128, 128);
+    margin-left: 6rem;
+    font-size: 1.5rem;
+
+}
+.woman-img{
+    margin: 12rem 10rem;
+    display: grid;
+    grid-template-areas: 'woman-img woman-img '
+    'serious-food  polca-dot';
+    
+    
+    
+}
+.polca-dot{
+    grid-area: polca-dot;
+    transform: translate(-150px, -160px);
+    
+        
+}
+.three-logos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 6rem;
+    margin-top: 4rem;
+}
+.service-logos{
+    display: grid;
+    grid-template-columns: repeat(8,100px);
+    margin: 20rem 5rem;
+    justify-content: center;
+    gap: 40px;
+    height: 100%;
+    border-top: 2px solid rgb(189, 189, 189);
+    border-bottom: 2px solid rgb(189, 189, 189);
+     
+}
+
+.service-logos h3{
+    font-size: 1.3rem;
+    margin-top: 5rem;
+
+}
+.service-logos h2{
+    font-size: 1rem;
+    color: rgb(189, 189, 189);
+}
+.service-logos img{
+    height: 7rem;
+    width: 100%;
+    margin: 4rem;
+    
+}
+ .lemon-leaf-image{
+    background-color: rgb(243, 252, 247);
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin-left: 5rem;
+    flex-grow: 1;
+    flex-basis: 50%;
+    
+    
+}
+.lemon-leaf{
+    display: flex;
+    
+}
+.our-benefit{
+    font-size: 2rem;
+    padding: 7rem;
+    margin-left: 7rem;
+}
+.healthy-food{
+    font-size: 6rem;
+    line-height: 7rem;
+    margin-left: 14rem;
+    background-image: url(/assets/Polcadot.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    
+}
+.contents{
+    flex-grow: 1;
+    flex-basis: 50%;
+
+}
+/* .polcadot-lemon{
+    transform: translate(80px, -160px);
+} */
+.tick-contents{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4rem;
+    padding: 7rem;
+    margin-left: 7rem;
+    
+}
+.veggie-food{
+    display: flex;
+}
+.our-stars{
+    font-size: 2rem;
+    padding: 3rem;
+}
+.details{
+    flex-grow: 1;
+    flex-basis: 50%;
+    padding: 8rem;
+       
+}
+.green-juice{
+    flex-grow: 1;
+    flex-basis: 50%;
+    margin-right: 5rem;
+    margin-top: 4rem;
+    background-image: rgb(243, 252, 247);    
+    height: 80vh; 
+    width: 80%;
+    
+       
+    
+}
+.food-veggie{
+    font-size: 7rem;
+    background-image: url(/assets/Polcadot-woman-image.svg);
+    background-repeat: no-repeat;
+   
+}
+.customer-service{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    
+}
+.rupees, .five-hundred,.four-hundred{
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgb(6, 193, 104);
+}
+.sold, .feedback,.official-store{
+    font-size: 2rem;
+    color: rgb(128, 128, 128);
+}
+/* .special-promo{
+    color: rgb(179, 229, 252);
+    background-color:rgb(6, 193, 104) ;
+    border: none;
+    min-height: 5rem;
+    width: 40%;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 3rem;
+    padding: 2rem 6rem;
+    margin-left: 5rem;
+    background-image: url(/assets/arrow-alt-right.svg);
+    background-repeat: no-repeat;
+    background-position:right;
+    
+} */
