@@ -149,20 +149,26 @@ a{
     margin: 4rem;
     
 }
- .lemon-leaf-image{
+ 
+.leaf-background{    
     background-color: rgb(243, 252, 247);
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    margin-left: 5rem;
-    flex-grow: 1;
-    flex-basis: 50%;
-    
-    
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: 4rem;
+      
 }
 .lemon-leaf{
     display: flex;
-    
+       
+}
+.check-contents{
+    display: flex;
+}
+.alive{
+    margin-left: 2rem;
+    font-size: 2rem;
 }
 .our-benefit{
     font-size: 2rem;
@@ -183,9 +189,6 @@ a{
     flex-basis: 50%;
 
 }
-/* .polcadot-lemon{
-    transform: translate(80px, -160px);
-} */
 .tick-contents{
     font-size: 3rem;
     font-weight: 400;
@@ -208,16 +211,14 @@ a{
        
 }
 .green-juice{
-    flex-grow: 1;
-    flex-basis: 50%;
-    margin-right: 5rem;
-    margin-top: 4rem;
-    background-image: rgb(243, 252, 247);    
-    height: 80vh; 
-    width: 80%;
-    
-       
-    
+    background-color: rgb(243, 252, 247);
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    margin-left: 4rem; 
+    margin-right: 6rem;
+    margin-top: 4rem; 
+        
 }
 .food-veggie{
     font-size: 7rem;
@@ -241,19 +242,230 @@ a{
     font-size: 2rem;
     color: rgb(128, 128, 128);
 }
-/* .special-promo{
+.promo-button{
     color: rgb(179, 229, 252);
     background-color:rgb(6, 193, 104) ;
     border: none;
     min-height: 5rem;
     width: 40%;
     font-size: 1.5rem;
-    text-align: left;
     margin-top: 3rem;
     padding: 2rem 6rem;
     margin-left: 5rem;
     background-image: url(/assets/arrow-alt-right.svg);
     background-repeat: no-repeat;
     background-position:right;
+    transform: translate(-30px,20px);    
+}
+.get-promo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+.fruits-images{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);     
+
+}
+.carrot{
+    grid-column: 1/1/1/2;
+    border: 1px solid rgb(6, 193, 104);
     
-} */
+}
+.forever{
+    grid-column: 1/2/1/3;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+    
+}
+.pappaya{
+    grid-column: 1/3/1/3;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+}
+.good-skin{
+    grid-column: 1/4/1/4;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+}
+.food-groove{
+    grid-column: 2/1/2/1;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+}
+.pomgranate{
+    grid-column: 2/2/2/2;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+}
+.that-comes{
+    grid-column: 2/3/2/3;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+}
+.lemon{
+    grid-column: 2/4/2/4;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+}
+
+.fruits-features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem;
+}
+.features{
+    font-size: 2rem;
+    font-weight: 400;
+       
+}
+.variety-foods{
+    font-size: 4rem;
+    font-weight: 800;
+    padding: 3rem;
+}
+.fruits-images{
+    padding: 4rem;  
+   
+}
+.veggies-forever, .good, .veggie-groove, .comes-close{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    
+}
+.we-offer{
+    font-size: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    line-height: 2rem;
+    
+}
+.discover{
+    /* color: rgb(179, 229, 252); */
+    background-color:rgb(238, 248, 240);  
+    color:rgb(20, 183, 104) ;
+    border: none;
+    min-height: 5rem;
+    width: 70%;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    padding: 2rem 6rem;
+    margin-left: 5rem;
+    background-image: url(/assets/arrow-icon.svg);
+    background-repeat: no-repeat;
+    background-position:right;
+    transform: translate(-30px,20px);  
+}
+.our-product{
+    font-size: 2rem;
+    padding: 3rem;
+    margin-left: 3rem;   
+    
+}
+.popular-product{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-left: 5rem;   
+      
+}
+.fruits-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    margin-top: 5rem;
+    gap: 9rem;
+    margin-left: 3rem;    
+
+}
+.five-star, .five, .five-st, .five-sta{
+    padding-left: 4rem;
+}
+
+.summer-veganie{
+    font-size: 2rem;
+    padding-left: 3rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+.price-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    font-size: 3rem;
+}
+.price-discount{
+    margin-left: 3rem;
+    color:rgb(20, 183, 104) ;
+
+}
+.price-rate{
+    color: rgb(117, 117, 117);
+}
+.buy-now{
+    color:rgb(20, 183, 104) ;
+    border-color: rgb(20, 183, 104);
+    background-color: rgb(255,255,255,255);
+    background-image: url(/assets/arrow-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    padding: 2rem 6rem;
+    margin-left: 5rem;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+}
+.first-frame{
+    border: 1px solid rgb(20, 183, 104);
+    
+}
+.fruits-in-round{
+    padding: 2rem;
+}
+.second-frame{
+    border: 1px solid rgb(117, 117, 117);
+}
+.ingredients{
+    font-size: 7rem;
+    font-weight: 500;
+    padding: 3rem;
+    padding-left: 7rem;
+    margin-top: 6rem;
+    color: rgb(255,255,255);
+    margin-left: 10rem;
+    /* transform: translate(-0px,-10px) */
+}
+.get-star{
+    color: rgb(179, 229, 252);
+    background-color:rgb(6, 193, 104) ;
+    border: none;
+    min-height: 4rem;
+    width: 20%;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    padding: 2rem 6rem;
+    margin-left: 50rem;
+    background-image: url(/assets/arrow-alt-right.svg);
+    background-repeat: no-repeat;
+    background-position:right;
+    transform: translate(-30px,20px);  
+    
+    
+}
+.mixed-veg{
+    background-image: url(/assets/mixed-veg-image.svg);
+    margin-top: 10rem;
+    padding: 5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    max-height: 90vh;
+}
