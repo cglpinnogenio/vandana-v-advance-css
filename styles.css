@@ -7,7 +7,8 @@
 }
 body{
     font-family: 'Roboto', sans-serif;;
-    overflow-x: hidden;
+    max-width: 1500px;
+    margin: 0rem;
 }
 .container-background{
     background-color: rgb(243, 252, 247);
@@ -25,13 +26,9 @@ body{
     width: 100%;
     top: 0;
     position: fixed;
-    background-color: rgb(243, 252, 247);;
+    background-color: rgb(243, 252, 247);
     
-}
-a{
-    text-decoration: none;
-    cursor: pointer;
-}
+}   
 .nav-foodies{
     font-size: 3rem;
     font-weight:400;
@@ -45,111 +42,159 @@ a{
     text-align: center;
     width: 50%;
     padding: 4rem;
-       
+      
 }
+
 .nav-home,.about, .service, .our-company, .pages{
-    color: black;
+    color: #000000;
     font-size: 2rem;
     font-weight: 400;
 }
-.container-food{
-    display: grid;
-    margin-top:0rem;
-    height:calc(100vh-0rem);
-    grid-template-areas: 'serious-food serious-food woman-img'
-                          'serious-food serious-food woman-img';
+a{
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
 }
-.serious-food{
-    grid-area: serious-food;
-    padding: 3rem;
-    font-size: 3rem;
+a:hover {
+    color:rgb(6, 193, 104);
+    }
+a:hover:before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    background: rgb(6, 193, 104);
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    left:calc(50% - 8px);
+}
+
+.container-food{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+    /* margin-top:3rem;
+    height:calc(100vh-3rem); */
+}
+.serious-food, .woman-img{
+    flex-basis: 50%;
 }
 .serious-food h1{
-    font-size: 12rem;
+    font-size: 13rem;
     font-weight: 500;
-    padding: 5rem;
+    padding: 6rem;
     line-height: 7rem;
-        
-
+    margin-left: 2rem;
+    margin-top: 11rem;
+}
+.serious-food p{
+    color: rgb(128, 128, 128);
+    margin-left: 8rem;
+    font-size: 1.5rem;
 }
 .get-started{
+    display: flex;
+    justify-content: space-around;
     color: rgb(179, 229, 252);
     background-color:rgb(6, 193, 104) ;
     border: none;
-    min-height: 5rem;
+    height: 6rem;
     width: 40%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 3rem;
-    padding: 2rem 6rem;
-    margin-left: 5rem;
-    background-image: url(/assets/arrow-right.svg);
-    background-repeat: no-repeat;
-    background-position:right;
-    
+    padding: 2rem 7rem;
+    margin-left: 8rem;
 }
 
-.serious-food p{
-    color: rgb(128, 128, 128);
-    margin-left: 6rem;
+.woman-image{
+    padding: 10rem;
+    width: 100%;
+    height:90%;
+    
+}
+.quality-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(400px, -770px);   
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 30%;
+    
+}
+.star-rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 30%;
+    height: 4%;
+    transform: translate(25px, -700px);   
+}
+.rating-star{
+    display: flex;
+    margin-left: 2rem;
+    
+}
+.five-rating{
     font-size: 1.5rem;
-
+    font-weight: 600;
 }
-.woman-img{
-    margin: 12rem 10rem;
-    display: grid;
-    grid-template-areas: 'woman-img woman-img '
-    'serious-food  polca-dot';
-    
-    
-    
+.gd-product{
+    font-size: 1.5rem;
+    font-weight: 600;
+       
 }
 .polca-dot{
-    grid-area: polca-dot;
-    transform: translate(-150px, -160px);
-    
+    transform: translate(450px,-300px);       
         
 }
 .three-logos{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 6rem;
-    margin-top: 4rem;
+    align-items: center;
+    text-align: left;
+    justify-content:left;   
+    padding: 4rem; 
+    margin-top: 12rem;   
+    margin-left: 4rem;
 }
-.service-logos{
+.logo-upper, .logo-lower, .logo-bold{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: rgb(128, 128, 128);    
+}
+.service-logos{      
     display: grid;
     grid-template-columns: repeat(8,100px);
-    margin: 20rem 5rem;
+    margin: 2rem 2rem;
+    margin-right: 6rem;
     justify-content: center;
-    gap: 40px;
-    height: 100%;
+    gap: 60px;
     border-top: 2px solid rgb(189, 189, 189);
     border-bottom: 2px solid rgb(189, 189, 189);
-     
+    
 }
-
 .service-logos h3{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: 5rem;
-
 }
 .service-logos h2{
     font-size: 1rem;
     color: rgb(189, 189, 189);
 }
 .service-logos img{
-    height: 7rem;
+    height: 5rem;
     width: 100%;
-    margin: 4rem;
-    
+    height: 30%;
+    margin: 4rem;    
 }
- 
+.truck-section,.quick-img, .promo-img, .support-img{
+    background-color: rgb(243, 252, 247);
+    background-size: cover;
+    border-radius: 20px;                
+}
+
 .leaf-background{    
     background-color: rgb(243, 252, 247);
     justify-content: center;
@@ -161,7 +206,7 @@ a{
 }
 .lemon-leaf{
     display: flex;
-       
+    margin-top: 9rem;       
 }
 .check-contents{
     display: flex;
@@ -176,29 +221,24 @@ a{
     margin-left: 7rem;
 }
 .healthy-food{
-    font-size: 6rem;
+    font-size: 7rem;
     line-height: 7rem;
     margin-left: 14rem;
     background-image: url(/assets/Polcadot.svg);
     background-repeat: no-repeat;
     background-position: left;
-    
-}
-.contents{
-    flex-grow: 1;
-    flex-basis: 50%;
-
+       
 }
 .tick-contents{
     font-size: 3rem;
     font-weight: 400;
     line-height: 4rem;
     padding: 7rem;
-    margin-left: 7rem;
-    
+    margin-left: 7rem;    
 }
 .veggie-food{
     display: flex;
+    margin-top: 9rem;
 }
 .our-stars{
     font-size: 2rem;
@@ -224,6 +264,7 @@ a{
     font-size: 7rem;
     background-image: url(/assets/Polcadot-woman-image.svg);
     background-repeat: no-repeat;
+    background-position: left;
    
 }
 .customer-service{
@@ -231,6 +272,7 @@ a{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2rem;
+    padding: 4rem;
     
 }
 .rupees, .five-hundred,.four-hundred{
@@ -242,28 +284,44 @@ a{
     font-size: 2rem;
     color: rgb(128, 128, 128);
 }
-.promo-button{
-    color: rgb(179, 229, 252);
-    background-color:rgb(6, 193, 104) ;
-    border: none;
-    min-height: 5rem;
-    width: 40%;
-    font-size: 1.5rem;
-    margin-top: 3rem;
-    padding: 2rem 6rem;
-    margin-left: 5rem;
-    background-image: url(/assets/arrow-alt-right.svg);
-    background-repeat: no-repeat;
-    background-position:right;
-    transform: translate(-30px,20px);    
-}
 .get-promo{
     display: flex;
     justify-content: flex-start;
-    align-items: center;    
+    align-items: center;
+    text-align: center;
+    color: rgb(179, 229, 252);
+    background-color:rgb(6, 193, 104) ;
+    border: none;
+    /* min-height: 7rem; */
+    height: 10%;
+    width: 45%;
+    font-size:2rem;
+    margin-top: 3rem;
+    padding: 2rem 6rem;
+    margin-left: 7rem;
+    
 }
+.right-arrww{
+    margin-left: 2rem;
+}
+
+.fruits-features{
+    padding: 4rem;
+}
+.features{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+.variety-foods{
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
 .fruits-images{
-    /* display: flex; */
+    
     display: grid;
     grid-template-columns: repeat(4,1fr);     
 
@@ -271,6 +329,7 @@ a{
 .carrot{
     grid-column: 1/1/1/2;
     border: 1px solid rgb(6, 193, 104);
+    width: 100%;
     
 }
 .forever{
@@ -283,6 +342,7 @@ a{
     grid-column: 1/3/1/3;
     border: 1px solid rgb(6, 193, 104);
     background-color: rgb(242, 250, 252);  
+    
 }
 .good-skin{
     grid-column: 1/4/1/4;
@@ -298,6 +358,7 @@ a{
     grid-column: 2/2/2/2;
     border: 1px solid rgb(6, 193, 104);
     background-color: rgb(242, 250, 252);  
+     
 }
 .that-comes{
     grid-column: 2/3/2/3;
@@ -308,58 +369,42 @@ a{
     grid-column: 2/4/2/4;
     border: 1px solid rgb(6, 193, 104);
     background-color: rgb(242, 250, 252);  
+     
 }
 
-.fruits-features{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15rem;
-}
-.features{
-    font-size: 2rem;
-    font-weight: 400;
-       
-}
-.variety-foods{
-    font-size: 4rem;
-    font-weight: 800;
-    padding: 3rem;
-}
+
 .fruits-images{
     padding: 4rem;  
    
 }
 .veggies-forever, .good, .veggie-groove, .comes-close{
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 500;
     margin-left: 3rem;
     margin-top: 2rem;
     
 }
 .we-offer{
-    font-size: 2rem;
+    font-size: 2.1rem;
     margin-left: 3rem;
     margin-top: 2rem;
     line-height: 2rem;
     
 }
 .discover{
-    /* color: rgb(179, 229, 252); */
-    background-color:rgb(238, 248, 240);  
-    color:rgb(20, 183, 104) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:rgb(6, 193, 104) ;
+    background-color:rgb(230,249,240); ;
     border: none;
-    min-height: 5rem;
-    width: 70%;
-    font-size: 1.5rem;
-    margin-top: 3rem;
-    padding: 2rem 6rem;
-    margin-left: 5rem;
-    background-image: url(/assets/arrow-icon.svg);
-    background-repeat: no-repeat;
-    background-position:right;
-    transform: translate(-30px,20px);  
+    height: 5rem;
+    width: 40%;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 4rem;
+    margin-top: 3rem;  
+
 }
 .our-product{
     font-size: 2rem;
@@ -375,65 +420,63 @@ a{
 }
 .fruits-frame{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
-    margin-top: 5rem;
-    gap: 9rem;
-    margin-left: 3rem;    
-
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center ;
+    margin-top: 6rem;
+   
 }
-.five-star, .five, .five-st, .five-sta{
-    padding-left: 4rem;
+.fruits-in-round{
+    padding: 2rem;
 }
-
-.summer-veganie{
+.attractive-section{
+    padding: 3rem;
+    line-height: 3rem;
+}
+.one-star{
+    display: flex;
+    justify-content: space-evenly;
+}
+.summer-veganie, .price-tag, .buy-now
+{
     font-size: 2rem;
-    padding-left: 3rem;
-    margin-top: 2rem;
-    align-items: center;
+    font-weight: 500;
+    text-align: center;
+    
 }
 .price-tag{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin-top: 2rem;
-    margin-right: 1rem;
-    font-size: 3rem;
 }
 .price-discount{
-    margin-left: 3rem;
+    font-size: 1.5rem;
     color:rgb(20, 183, 104) ;
 
 }
 .price-rate{
+    font-size: 1.5rem;
     color: rgb(117, 117, 117);
 }
 .buy-now{
-    color:rgb(20, 183, 104) ;
-    border-color: rgb(20, 183, 104);
-    background-color: rgb(255,255,255,255);
-    background-image: url(/assets/arrow-icon.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color:rgb(20, 183, 104) ; 
+    border: 1px solid rgb(20, 183, 104);
+      
+    font-size: 2.5rem;
     font-weight: 600;
-    margin-top: 2rem;
-    padding: 2rem 6rem;
-    margin-left: 5rem;
-    padding-left: 3rem;
-    margin-bottom: 2rem;
+    
 }
 .first-frame{
     border: 1px solid rgb(20, 183, 104);
     
 }
-.fruits-in-round{
-    padding: 2rem;
-}
 .second-frame{
     border: 1px solid rgb(117, 117, 117);
 }
+
+
 .ingredients{
     font-size: 7rem;
     font-weight: 500;
@@ -442,25 +485,26 @@ a{
     margin-top: 6rem;
     color: rgb(255,255,255);
     margin-left: 10rem;
-    /* transform: translate(-0px,-10px) */
+    
 }
 .get-star{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     color: rgb(179, 229, 252);
     background-color:rgb(6, 193, 104) ;
     border: none;
-    min-height: 4rem;
+    height: 6rem;
     width: 20%;
-    font-size: 1.5rem;
-    margin-top: 3rem;
-    padding: 2rem 6rem;
-    margin-left: 50rem;
-    background-image: url(/assets/arrow-alt-right.svg);
-    background-repeat: no-repeat;
-    background-position:right;
-    transform: translate(-30px,20px);  
+    font-size: 2.5rem;
+    margin-top: 3rem;     
     
     
 }
+.right-arrw{
+    margin-left: 2rem;
+}
+
 .mixed-veg{
     background-image: url(/assets/mixed-veg-image.svg);
     margin-top: 10rem;
@@ -468,4 +512,114 @@ a{
     margin-left: 6rem;
     margin-right: 6rem;
     max-height: 90vh;
+    width: 90%;
+    
 }
+.info-section{
+    display: flex;
+    flex-direction: row;
+    padding: 8rem;
+    justify-content: space-around;
+}
+.foodie{
+    color: rgb(20, 183, 104) ;
+    font-size: 3rem;
+}
+.lorem-para{
+    font-size: 2rem;
+    margin-top: 2rem;
+    
+}
+.abbout-us, .kompany, .get-in-touch{
+    font-size: 3rem;
+}
+.social-media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.us-about, .company-about, .get-touch{   
+    margin-left: 10rem; 
+       
+}
+.sub-about, .servicee, .contact, .company, .partner-ship, .terms-use, .privacy, .site-map{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 3rem;
+    
+}
+.lorem-ipsum{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    
+}
+.mail-sub{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+.email{
+    font-size: 1rem;
+    background-color: rgb(189, 189, 189);
+    border: none;
+    width: 50%;
+    padding: 1rem;    
+}
+.subscribe{
+    color: rgb(179, 229, 252);
+    background-color:rgb(6, 193, 104) ;
+    border: none;
+    width: 40%;
+    height: 22%;
+    font-size: 1.5rem;
+    padding: 1rem; 
+}
+.copy-right{
+    font-size: 1.5rem;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+@media(max-width:720px) {
+    .nav-items{
+        flex-direction: column;
+        display: none;
+    }
+    .container-food{
+        flex-direction: column;
+    }
+    .three-logos{
+        flex-direction: column;
+    }
+    .service-logos{
+        grid-template-columns: repeat(4,100px);
+    }
+    .lemon-leaf{
+        flex-direction: column;
+    }
+    .customer-service{
+        flex-direction: column;
+    }
+    .veggie-food{
+        flex-direction: column;
+    }
+    .fruits-images{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .fruits-frame{
+        flex-direction: column;
+    }
+    .info-section{
+        flex-direction: column;
+    }
+    .get-touch{
+        flex-direction: column;
+    }
+    .mail-sub{
+        flex-direction: column;
+    }
+}
+
