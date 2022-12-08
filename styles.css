@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     font-size: 62.5%;
-
 }
 body{
     font-family: 'Roboto', sans-serif;;
@@ -27,7 +26,7 @@ body{
     top: 0;
     position: fixed;
     background-color: rgb(243, 252, 247);
-    
+    z-index: 1;
 }   
 .nav-foodies{
     font-size: 3rem;
@@ -68,6 +67,10 @@ a:hover:before {
     border-radius: 100%;
     left:calc(50% - 8px);
 }
+.sub-container{
+    min-height: 20vh;
+    padding: 2rem;
+}
 
 .container-food{
     display: flex;
@@ -75,9 +78,9 @@ a:hover:before {
     height:calc(100vh-3rem); */
 }
 .serious-food, .woman-img{
-    flex-basis: 50%;
+    /* flex-basis: 50%; */
 }
-.serious-food h1{
+.main-title{
     font-size: 13rem;
     font-weight: 500;
     padding: 6rem;
@@ -103,12 +106,14 @@ a:hover:before {
     margin-top: 3rem;
     padding: 2rem 7rem;
     margin-left: 8rem;
+    cursor: pointer;
 }
 
 .woman-image{
     padding: 10rem;
     width: 100%;
     height:90%;
+
     
 }
 .quality-product{
@@ -152,28 +157,30 @@ a:hover:before {
 .three-logos{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    text-align: left;
-    justify-content:left;   
-    padding: 4rem; 
-    margin-top: 12rem;   
+    align-items:left;
+    
+    /* text-align: left; */
+    /* justify-content:space-between;    */
+    /* padding: 2rem;  */
+    /* margin-top: 3rem;    */
     margin-left: 4rem;
 }
 .logo-upper, .logo-lower, .logo-bold{
     font-size: 2rem;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
     color: rgb(128, 128, 128);    
 }
 .service-logos{      
     display: grid;
     grid-template-columns: repeat(8,100px);
     margin: 2rem 2rem;
-    margin-right: 6rem;
+    /* margin-right: 6rem; */
     justify-content: center;
     gap: 60px;
     border-top: 2px solid rgb(189, 189, 189);
     border-bottom: 2px solid rgb(189, 189, 189);
-    
+    border-width: 90%;
+        
 }
 .service-logos h3{
     font-size: 1.4rem;
@@ -286,19 +293,18 @@ a:hover:before {
 }
 .get-promo{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     color: rgb(179, 229, 252);
     background-color:rgb(6, 193, 104) ;
     border: none;
-    /* min-height: 7rem; */
-    height: 10%;
-    width: 45%;
-    font-size:2rem;
-    margin-top: 3rem;
+    height: 7rem;
+    width: 50%;
+    font-size:2.3rem;
     padding: 2rem 6rem;
-    margin-left: 7rem;
+    margin-left: 5rem;
+    cursor: pointer;
     
 }
 .right-arrww{
@@ -318,18 +324,27 @@ a:hover:before {
     font-weight: 700;
     text-align: center;
 }
-
-
 .fruits-images{
-    
     display: grid;
-    grid-template-columns: repeat(4,1fr);     
+    grid-template-columns: repeat(4,1fr);   
+         
+}
 
+.red-carrot{
+    width: 100%;
+}
+.red-pappaya{
+    width: 100%;
+}
+.red-pomgranate{
+    width: 100%;
+}
+.green-lemon{
+    width: 100%;
 }
 .carrot{
     grid-column: 1/1/1/2;
-    border: 1px solid rgb(6, 193, 104);
-    width: 100%;
+    border: 1px solid rgb(6, 193, 104);    
     
 }
 .forever{
@@ -404,6 +419,7 @@ a:hover:before {
     font-weight: 400;
     margin-left: 4rem;
     margin-top: 3rem;  
+    cursor: pointer;
 
 }
 .our-product{
@@ -463,7 +479,7 @@ a:hover:before {
     justify-content: center;
     color:rgb(20, 183, 104) ; 
     border: 1px solid rgb(20, 183, 104);
-      
+    cursor: pointer;  
     font-size: 2.5rem;
     font-weight: 600;
     
@@ -489,6 +505,20 @@ a:hover:before {
 }
 .get-star{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(179, 229, 252);
+    background-color:rgb(6, 193, 104) ;
+    width: 20%;
+    height: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 3rem;
+    margin-left: 40rem;
+   }
+
+/* .get-star{
+    display: flex;
     justify-content: space-around;
     align-items: center;
     color: rgb(179, 229, 252);
@@ -497,13 +527,12 @@ a:hover:before {
     height: 6rem;
     width: 20%;
     font-size: 2.5rem;
-    margin-top: 3rem;     
-    
-    
+    margin-top: 3rem;   
+    cursor: pointer;        
 }
-.right-arrw{
+.right-arroww{
     margin-left: 2rem;
-}
+} */
 
 .mixed-veg{
     background-image: url(/assets/mixed-veg-image.svg);
@@ -583,7 +612,7 @@ a:hover:before {
     text-align: center;
 }
 
-@media(max-width:720px) {
+/* @media(max-width:720px) {
     .nav-items{
         flex-direction: column;
         display: none;
@@ -607,13 +636,14 @@ a:hover:before {
         flex-direction: column;
     }
     .fruits-images{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,2fr);
     }
     .fruits-frame{
         flex-direction: column;
     }
     .info-section{
         flex-direction: column;
+        gap: 2rem;
     }
     .get-touch{
         flex-direction: column;
@@ -622,4 +652,4 @@ a:hover:before {
         flex-direction: column;
     }
 }
-
+ */
