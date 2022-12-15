@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-size: 62.5%;
+    text-align: center;
 }
 body{
     font-family: 'Roboto', sans-serif;;
@@ -167,21 +168,27 @@ body{
 .serious-food{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content:space-between;
     margin-top: 9rem;
 
 }
 .para-section{
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .woman-img{
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    
     
 }
 .container-background{
     background-color: rgb(243, 252, 247);
     background-position: center;
-    height: 130vh;
+    /* height: 130vh; */
     width: 100%;
 }
 .main-title{
@@ -202,41 +209,45 @@ body{
 }
 .get-started{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     color: rgb(179, 229, 252);
     background-color:rgb(6, 193, 104) ;
     border: none;
     height: 5rem;
-    width: 80%;
+    width: 50%;
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
-    padding: 2rem 3rem;
+    /* padding: 2rem 3rem; */
     cursor: pointer;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
+    
 }
 .woman-image{
     max-width: 80%;
     max-height: 60%;
     margin-top: 2rem;
    margin-left: 2rem;
-   position: relative;
+   /* position: relative; */
    
 }
 .quality-product{
-    position: absolute;
-    top: 85rem;
-    right: 14rem;
+    /* position: absolute; */
+    /* top: 85rem; */
+    /* right: 14rem;
+    bottom: 10rem; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     width: 55%;
     height: 7%; 
-    
+    transform: translate(70px,-40px);   
+
+       
 }
 .gd-product{
     font-size: 1.2rem;
@@ -244,15 +255,19 @@ body{
 }
 .star-rating{
     display: flex;
-    position: absolute;
-    top: 80rem;
-    right: 14rem;
+    /* position: absolute; */
+    /* top: 80rem; */
+    /* bottom: 5rem;
+    left: 50%;
+    right: 14rem; */
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    width: 50%;
-    height: 6%;     
+    width: 55%;
+    height: 4rem;
+    transform: translate(80px,-140px);   
+   
     }
 .rating-star{
     display: flex;
@@ -264,9 +279,10 @@ body{
 }
 
 .polca-dot{
-    position: absolute;
-    top: 72rem;
-    right: 3rem;
+    /* position: absolute;
+    top: 68rem;
+    right: 3rem; */
+    transform: translate(80px,-250px);       
         
 }
 .logos{
@@ -291,6 +307,27 @@ body{
 @media (min-wid:390px){
     .serious-food{
         flex-wrap: wrap;
+    }    
+}
+@media (min-width:500px){
+    .quality-product{
+    width: 50%;
+    height: 5%; 
+    transform: translate(100px,-100px);
     }
+    .star-rating{
+    width: 50%;
+    height: 4rem;
+    transform: translate(100px,-190px);   
+    }
+    .polca-dot{
+    transform: translate(150px,-250px);    
+            
+    }
+}
+@media (min-width:800px){
+
+
+
 }
 
