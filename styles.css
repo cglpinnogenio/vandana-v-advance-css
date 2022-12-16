@@ -179,10 +179,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .woman-img{
     /* flex-grow: 1; */
-    
+    flex: 1;
+
     
 }
 .container-background{
@@ -197,7 +199,8 @@ body{
     padding: 4rem;
     line-height: 4rem;
     align-items: center;
-    margin-left: 2rem;      
+    margin-left: 2rem;  
+    margin-top: 2rem;    
 }
 .food-para{
     margin-left: 1rem;
@@ -286,24 +289,31 @@ body{
         
 }
 .logos{
-    display: flex;   
+    display: flex;  
+    justify-content: center; 
+    width: 40%;
     
 } 
 .three-logos{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 4rem;  
+    gap: 2rem;
     margin-top: 3rem;  
+}
+@media(min-width:800px){
+   
+   .logos{
+    width: 25%;
+   } 
 }
 .loggo-upper{
     margin-left: 2rem;
     font-size: 1rem;
     color: rgb(128, 128, 128);
 }
-#log-one{
-    margin-left: 12rem;
-}
-
 @media (min-wid:390px){
     .serious-food{
         flex-wrap: wrap;
@@ -326,8 +336,515 @@ body{
     }
 }
 @media (min-width:800px){
-
-
+    .serious-food{
+        flex-direction: row;
+        align-items: center;
+    }
+    .polca-dot{
+        transform: translate(113px,-180px);
+    }
+    .quality-product{
+    width: 40%;
+    height: 2%; 
+    transform: translate(230px,-300px);
+    }
+    .star-rating{
+        width: 50%;
+        height: 4rem;
+        transform: translate(-50px,-280px);   
+        }
+        .food-para{
+            font-size: 2.5rem;
+        }
+        
 
 }
+@media(min-width:1200px){
+    .polca-dot{
+        transform: translate(160px,-180px);
+    }
+    .quality-product{
+    width: 35%;
+    height: 2%; 
+    transform: translate(350px,-430px);
+    
+    }
+    .gd-product{
+        font-size: 1.5rem;
+    }
+    .star-rating{
+        width: 40%;
+        height: 4rem;
+        transform: translate(-40px,-350px);   
+        }
+        .main-title{
+            font-size: 13rem;
+            font-weight: 700;
+            text-align: left;
+            line-height: 7rem;
+            padding: 6rem;            
+            margin-left: 2rem;
+            margin-top: 1rem;
+            
+        }
+        /* .food-para{
+            padding: 7rem;
+            line-height: 7rem;
+            margin-left: 2rem;
+            margin-top: 11rem;
+        } */
+        
+        @media(min-width:1500px){
+
+        }
+}
+
+
+.service-logos{      
+    display: grid;
+    grid-template-columns: repeat(8,100px);
+    margin: 2rem 2rem;
+    justify-content: center;
+    gap: 60px;
+    border-top: 2px solid rgb(189, 189, 189);
+    border-bottom: 2px solid rgb(189, 189, 189);
+    border-width: 90%;
+        
+}
+.service-logos h3{
+    font-size: 1.4rem;
+    margin-top: 5rem;
+}
+.service-logos h2{
+    font-size: 1rem;
+    color: rgb(189, 189, 189);
+}
+.service-logos img{
+    height: 5rem;
+    width: 100%;
+    height: 30%;
+    margin: 4rem;    
+}
+.truck-section,.quick-img, .promo-img, .support-img{
+    background-color: rgb(243, 252, 247);
+    background-size: cover;
+    border-radius: 20px;                
+}
+
+@media(min-width:800px){
+    .service-logos{
+        grid-template-columns: repeat(4,100px);
+        
+    }
+}
+.leaf-background{    
+    background-color: rgb(243, 252, 247);
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: 4rem;
+      
+}
+.lemon-leaf{
+    display: flex;
+    margin-top: 9rem;       
+}
+.check-contents{
+    display: flex;
+}
+.alive{
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+.our-benefit{
+    font-size: 2rem;
+    padding: 7rem;
+    margin-left: 7rem;
+}
+.healthy-food{
+    font-size: 7rem;
+    line-height: 7rem;
+    margin-left: 14rem;
+    background-image: url(/assets/Polcadot.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+       
+}
+.tick-contents{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4rem;
+    padding: 7rem;
+    margin-left: 7rem;    
+}
+.veggie-food{
+    display: flex;
+    margin-top: 9rem;
+}
+.our-stars{
+    font-size: 2rem;
+    padding: 3rem;
+}
+.details{
+    flex-grow: 1;
+    flex-basis: 50%;
+    padding: 8rem;
+       
+}
+.green-juice{
+    background-color: rgb(243, 252, 247);
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    margin-left: 4rem; 
+    margin-right: 6rem;
+    margin-top: 4rem; 
+        
+}
+.food-veggie{
+    font-size: 7rem;
+    background-image: url(/assets/Polcadot-woman-image.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+   
+}
+.customer-service{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 4rem;
+    
+}
+.rupees, .five-hundred,.four-hundred{
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgb(6, 193, 104);
+}
+.sold, .feedback,.official-store{
+    font-size: 2rem;
+    color: rgb(128, 128, 128);
+}
+.get-promo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: rgb(179, 229, 252);
+    background-color:rgb(6, 193, 104) ;
+    border: none;
+    height: 7rem;
+    width: 50%;
+    font-size:2.3rem;
+    padding: 2rem 6rem;
+    margin-left: 5rem;
+    cursor: pointer;
+    
+}
+.right-arrww{
+    margin-left: 2rem;
+}
+
+.fruits-features{
+    padding: 4rem;
+}
+.features{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+.variety-foods{
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.fruits-images{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);   
+         
+}
+
+.red-carrot{
+    width: 100%;
+}
+.red-pappaya{
+    width: 100%;
+}
+.red-pomgranate{
+    width: 100%;
+}
+.green-lemon{
+    width: 100%;
+}
+.carrot{
+    grid-column: 1/1/1/2;
+    border: 1px solid rgb(6, 193, 104);    
+    
+}
+.forever{
+    grid-column: 1/2/1/3;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+    
+}
+.pappaya{
+    grid-column: 1/3/1/3;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+    
+}
+.good-skin{
+    grid-column: 1/4/1/4;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+}
+.food-groove{
+    grid-column: 2/1/2/1;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+}
+.pomgranate{
+    grid-column: 2/2/2/2;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+     
+}
+.that-comes{
+    grid-column: 2/3/2/3;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+}
+.lemon{
+    grid-column: 2/4/2/4;
+    border: 1px solid rgb(6, 193, 104);
+    background-color: rgb(242, 250, 252);  
+     
+}
+
+
+.fruits-images{
+    padding: 4rem;  
+   
+}
+.veggies-forever, .good, .veggie-groove, .comes-close{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    
+}
+.we-offer{
+    font-size: 2.1rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    line-height: 2rem;
+    
+}
+.discover{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:rgb(6, 193, 104) ;
+    background-color:rgb(230,249,240); ;
+    border: none;
+    height: 5rem;
+    width: 40%;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 4rem;
+    margin-top: 3rem;  
+    cursor: pointer;
+
+}
+.our-product{
+    font-size: 2rem;
+    padding: 3rem;
+    margin-left: 3rem;   
+    
+}
+.popular-product{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-left: 5rem;   
+      
+}
+.fruits-frame{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center ;
+    margin-top: 6rem;
+   
+}
+.fruits-in-round{
+    padding: 2rem;
+}
+.attractive-section{
+    padding: 3rem;
+    line-height: 3rem;
+}
+.one-star{
+    display: flex;
+    justify-content: space-evenly;
+}
+.summer-veganie, .price-tag, .buy-now
+{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    
+}
+.price-tag{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.price-discount{
+    font-size: 1.5rem;
+    color:rgb(20, 183, 104) ;
+
+}
+.price-rate{
+    font-size: 1.5rem;
+    color: rgb(117, 117, 117);
+}
+.buy-now{
+    display: flex;
+    justify-content: center;
+    color:rgb(20, 183, 104) ; 
+    border: 1px solid rgb(20, 183, 104);
+    cursor: pointer;  
+    font-size: 2.5rem;
+    font-weight: 600;
+    
+}
+.first-frame{
+    border: 1px solid rgb(20, 183, 104);
+    
+}
+.second-frame{
+    border: 1px solid rgb(117, 117, 117);
+}
+
+
+.ingredients{
+    font-size: 7rem;
+    font-weight: 500;
+    padding: 3rem;
+    padding-left: 7rem;
+    margin-top: 6rem;
+    color: rgb(255,255,255);
+    margin-left: 10rem;
+    
+}
+.get-star{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(179, 229, 252);
+    background-color:rgb(6, 193, 104) ;
+    width: 20%;
+    height: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 3rem;
+    margin-left: 40rem;
+   }
+
+/* .get-star{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(179, 229, 252);
+    background-color:rgb(6, 193, 104) ;
+    border: none;
+    height: 6rem;
+    width: 20%;
+    font-size: 2.5rem;
+    margin-top: 3rem;   
+    cursor: pointer;        
+}
+.right-arroww{
+    margin-left: 2rem;
+} */
+
+.mixed-veg{
+    background-image: url(/assets/mixed-veg-image.svg);
+    margin-top: 10rem;
+    padding: 5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    max-height: 90vh;
+    width: 90%;
+    
+}
+.info-section{
+    display: flex;
+    flex-direction: row;
+    padding: 8rem;
+    justify-content: space-around;
+}
+.foodie{
+    color: rgb(20, 183, 104) ;
+    font-size: 3rem;
+}
+.lorem-para{
+    font-size: 2rem;
+    margin-top: 2rem;
+    
+}
+.abbout-us, .kompany, .get-in-touch{
+    font-size: 3rem;
+}
+.social-media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.us-about, .company-about, .get-touch{   
+    margin-left: 10rem; 
+       
+}
+.sub-about, .servicee, .contact, .company, .partner-ship, .terms-use, .privacy, .site-map{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 3rem;
+    
+}
+.lorem-ipsum{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    
+}
+.mail-sub{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+.email{
+    font-size: 1rem;
+    background-color: rgb(189, 189, 189);
+    border: none;
+    width: 50%;
+    padding: 1rem;    
+}
+.subscribe{
+    color: rgb(179, 229, 252);
+    background-color:rgb(6, 193, 104) ;
+    border: none;
+    width: 40%;
+    height: 22%;
+    font-size: 1.5rem;
+    padding: 1rem; 
+}
+.copy-right{
+    font-size: 1.5rem;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
 
